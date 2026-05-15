@@ -1,0 +1,10 @@
+# GHDL artifacts
+*.o
+*.cf
+work-obj93cf/
+work-obj08/
+
+# misc
+.DS_Store
+.vscode/
+.idea/
