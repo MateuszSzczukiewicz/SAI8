@@ -14,7 +14,6 @@ end entity reg8;
 architecture rtl of reg8 is
   signal mem : std_logic_vector(7 downto 0);
 begin
-
   process(clk)
   begin
     if rising_edge(clk) then
@@ -27,5 +26,4 @@ begin
   end process;
 
   d_out <= mem;
-
 end architecture rtl;
