@@ -3,4 +3,5 @@ standard = "2008"
 [libraries]
 sai8_lib.files = [
     "src/*.vhd",
+    "tb/*.vhd"
 ]
