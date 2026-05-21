@@ -3,7 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity pc8 is
+entity pc16 is
   port (
     clk   : in    std_logic;
     rst  : in    std_logic;
@@ -11,9 +11,9 @@ entity pc8 is
     load : in std_logic;
     load_addr : in std_logic_vector(15 downto 0)
   );
-end entity pc8;
+end entity pc16;
 
-architecture rtl of pc8 is
+architecture rtl of pc16 is
   signal pc : unsigned(15 downto 0);
 begin
   process(clk)
