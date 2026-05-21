@@ -1,13 +1,13 @@
 library ieee;
-  use ieee.std_logic_1164.all;
+use ieee.std_logic_1164.all;
 
 entity reg1 is
   port (
     clk   : in    std_logic;
     rst  : in    std_logic;
     we : in   std_logic;
-    d_in : in   std_logic;
-    d_out : out   std_logic
+    din : in   std_logic;
+    dout : out   std_logic
   );
 end entity reg1;
 
@@ -20,10 +20,10 @@ begin
       if rst = '1' then
         mem <= '0';
       elsif we = '1' then
-        mem <= d_in;
+        mem <= din;
       end if;
     end if;
   end process;
 
-  d_out <= mem;
+  dout <= mem;
 end architecture rtl;
